@@ -1,0 +1,15 @@
+<form ng-submit='factory.addGuest()' class='form-inline'>
+    <h3>Who's flying?</h3>
+    <span>
+      Adult: {{count}}
+    </span>
+    <span class='btn btn-warning' ng-click="count = count + 1" ng-init="count=0">
+      Increment
+  </span>
+    <span class='btn btn-warning' ng-click="count = count - 1" ng-init="count=0">
+      Decrement
+  </span>
+
+    <button ui-sref='home' type="submit">Submit</button>
+
+</form>

@@ -1,0 +1,9 @@
+<div class="row">
+    <a ui-sref="guests">
+        <p>Guests</p>
+        <span ng-show='!tripInfo.guestnumber.length'>{{tripInfo.guest}}</span>
+        <p>{{factory.tripInfo.guestnumber}}</p>
+    </a>
+</div>
+
+<div ui-view> </div>
