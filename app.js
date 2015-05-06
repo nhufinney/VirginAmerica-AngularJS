@@ -1,4 +1,4 @@
-var airLine = angular.module('airLine', ['ui.router']);
+var airLine = angular.module('airLine', ['ui.router', 'firebase']);
 
 airLine.config(function($stateProvider) {
     $stateProvider.state('home', {

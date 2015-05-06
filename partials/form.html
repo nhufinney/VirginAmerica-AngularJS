@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Where Would You Like To Go?</h1>
+    <div class="form-group">
+        <select>Guests
+            <option>Adult</option>
+            <option>Children</option>
+            <option>Lap Infant</option>
+            <option>Pet</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <select>From
+            <option class="location" ng-repeat "item in departures">{{ item }}</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <select>To
+            <option class="location" ng-repeat "item in destinations">
+        </select>
+    </div>
+
+</div>

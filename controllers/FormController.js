@@ -1,12 +1,21 @@
-airLine.controller('FormCtrl', function FormCtrl($scope, TripFactory) {
-    $scope.tripInfo = TripFactory.tripInfo;
-    $scope.TripFactory = TripFactory;
+airLine.controller("FirebaseController",
+  ["$scope", "$firebaseArray",
+  function($scope, $firebaseArray) {
+    var database = new Firebase("https://airline.firebaseio.com/");
 
-    $scope.tripInfo.guest = "1 Adult";
+    $scope.sync = $firebaseArray(database);
 
-    $scope.addGuest = function() {
-        var count = $scope.count;
-        $scope.TripFactory.addGuest(count);
-    };
+    $scope.addTrip = function() {
+     var newguest = $scope.newguest;
+     var newlocation = $scope.newlocation;
+     var newdesination =  $scope.newdestination;
 
-});
+      $scope.sync.$add(
+        {
+        guest:
+        location:
+        destination:
+        });
+    }
+  }
+]);
