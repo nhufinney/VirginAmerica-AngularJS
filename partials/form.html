@@ -1,24 +1,56 @@
-<div class="container">
-    <h1>Where Would You Like To Go?</h1>
-    <div class="form-group">
-        <select>Guests
-            <option>Adult</option>
-            <option>Children</option>
-            <option>Lap Infant</option>
-            <option>Pet</option>
-        </select>
+<h1>Where Would You Like To Go?</h1>
+<div class="container" class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Guests
+            </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <p>Adult</p><br>
+                <p>Children</p><br>
+                <p>Pets</p>
+            </div>
+        </div>
     </div>
 
-    <div class="form-group">
-        <select>From
-            <option class="location" ng-repeat "item in departures">{{ item }}</option>
-        </select>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Departures
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <div class="row">
+                    <p>City One</p><br>
+                    <p>City Two</p><br>
+                    <p>City Three</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="form-group">
-        <select>To
-            <option class="location" ng-repeat "item in destinations">{{ item }}</option>
-        </select>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Destinations
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+                <div class="row">
+                <p>City A</p><br>
+                <p>City B</p>
+                </div>
+            </div>
+        </div>
     </div>
-
 </div>

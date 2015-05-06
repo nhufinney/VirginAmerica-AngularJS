@@ -1,23 +1,27 @@
 <html ng-app='airLine'>
     <head>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
+        <script src="css/respond.min.js"></script>
+        <!-- // <script src="css/scripts.js"></script> -->
+
+        <!-- // <script src="css/jquery-1.11.3.min.js"></script> -->
 
         <script src="lib/angular.js" ></script>
         <script src="lib/angular-ui-router.js"></script>
         <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
         <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
         <script src="app.js"></script>
-        <script src="controllers/FormController.js"></script>
-        <script src="services/TripFactory.js"></script>
+        <script src="controllers/LocationController.js"></script>
+        <script src="services/LocationFactory.js"></script>
 
         <title>Virgin America Clone</title>
     </head>
     <body>
-        <div class='container'>
-            <div ui-view>
-
-            </div>
+        <div ui-view>
         </div>
     </body>
 </html>

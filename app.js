@@ -4,7 +4,7 @@ airLine.config(function($stateProvider) {
     $stateProvider.state('home', {
         url: "",
         templateUrl: "partials/form.html",
-        controller: 'FormController'
+        controller: 'LocationCtrl'
     });
 
     // $stateProvider.state('guests', {
