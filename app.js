@@ -1,4 +1,4 @@
-var airLine = angular.module('airLine', ['ui.router', 'firebase']);
+var airLine = angular.module('airLine', ['ui.router']);
 
 airLine.config(function($stateProvider) {
     $stateProvider.state('home', {
@@ -7,9 +7,5 @@ airLine.config(function($stateProvider) {
         controller: 'LocationCtrl'
     });
 
-    // $stateProvider.state('guests', {
-    //     url: "/guests_info",
-    //     templateUrl: "partials/guests.html",
-    //     controller: 'FormCtrl'
-    // });
+
 });

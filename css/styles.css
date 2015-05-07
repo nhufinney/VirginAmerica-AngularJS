@@ -1,36 +1,19 @@
-.spacing {
-    padding: 10px;
-    border: 1px solid red;
-    text-align: left;
+#division{
+  text-align: left;
+  border: 1px;
+  border-top-color: : white;
+  border-right-color: white;
+  border-left-color : white;
+  border-bottom-style: solid;
+  border-bottom-color: #EBEBE0;
 }
 
-select {
-    width: 100%;
-    height: auto;
-    border: none;
-    background: white;
+.col-md-4{
+  padding: 50px;
+  width: 300 px;
 }
 
-option{
-    width: 100%;
-    height: 100%;
-}
-
-span{
-    align: right;
-}
-
-
-.panel-heading a:after {
-    font-family:'Glyphicons Halflings';
-    content:"\e114";
-    float: right;
-    color: grey;
-}
-.panel-heading a.collapsed:after {
-    content:"\e080";
-}
-
-.panel-body {
-    font-family: 'Droid Sans', sans-serif;
+h1{
+  color: #ADAD85;
+  text-shadow: 3px 3px 2px #DEDECE;
 }

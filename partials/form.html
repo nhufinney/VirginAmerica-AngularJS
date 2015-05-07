@@ -1,56 +1,36 @@
-<h1>Where Would You Like To Go?</h1>
-<div class="container" class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-            <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Guests
-            </a>
-            </h4>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-            <div class="panel-body">
-                <p>Adult</p><br>
-                <p>Children</p><br>
-                <p>Pets</p>
-            </div>
-        </div>
+<h1 align="center">Where Would You Like To Go?</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="dropdown" >
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">From
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" >
+          <!-- <li role="presentation"><a id ="division" ng-repeat= "item in guests" ui-sref="item.guest({guestId: item.id})"role="menuitem" tabindex="-1" ><br>{{item.num}} {{item.guest}}</a></li> -->
+          <li role="presentation"><a id ="division" ui-sref="item.guest({guestId: item.id})"role="menuitem" tabindex="-1" ng-repeat= "item in guests"><br>{{item.guest}}</a></li>
+
+        </ul>
+      </div>
     </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Departures
-                </a>
-            </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body">
-                <div class="row">
-                    <p>City One</p><br>
-                    <p>City Two</p><br>
-                    <p>City Three</p>
-                </div>
-            </div>
-        </div>
+    <div class="col-md-4">
+      <div class="dropdown" >
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">From
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" >
+          <li role="presentation"><a id ="division" ui-sref="item.departure({departureId: item.id})"role="menuitem" tabindex="-1" ng-repeat= "item in departures"><br>{{item.departure}}</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Destinations
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                <div class="row">
-                <p>City A</p><br>
-                <p>City B</p>
-                </div>
-            </div>
-        </div>
+    <div class="col-md-4">
+      <div class="dropdown" >
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">To
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" >
+          <li role="presentation"><a id ="division" ui-sref="item.departure({destinationId: item.id})"role="menuitem" tabindex="-1" ng-repeat= "item in destinations"><br>{{item.destination}}</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
